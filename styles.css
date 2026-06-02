@@ -856,3 +856,94 @@ a.contacto-dato:hover { box-shadow: var(--shadow); }
   .form-card { padding: 1.75rem; }
   .prop-banner-nums { flex-wrap: wrap; justify-content: center; }
 }
+
+/* ── LOGOS ───────────────────────────────────────────── */
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  transition: opacity var(--trans);
+}
+.nav-logo-img:hover { opacity: .85; }
+
+/* When nav scrolls, logo needs to stay visible on white bg */
+.nav.scrolled .nav-logo-img {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(53%) saturate(694%) hue-rotate(185deg) brightness(89%) contrast(95%);
+}
+
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  margin-bottom: .75rem;
+  opacity: .9;
+}
+
+/* ── NAV LOGO v2 ─────────────────────────────────────── */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.nav-logo-img {
+  height: 38px !important;
+  width: auto;
+  display: block;
+  transition: opacity var(--trans);
+  filter: brightness(0) invert(1); /* white on dark bg */
+}
+.nav-logo-img:hover { opacity: .85; }
+.nav.scrolled .nav-logo-img {
+  filter: none; /* show original colors on white bg */
+}
+.nav-logo-text {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--blanco);
+  letter-spacing: .02em;
+  transition: color var(--trans);
+  line-height: 1.1;
+}
+.nav-logo-sub {
+  display: block;
+  font-size: .65rem;
+  font-weight: 400;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .8;
+}
+.nav.scrolled .nav-logo-text { color: var(--azul); }
+
+/* ── FOOTER LOGO v2 ──────────────────────────────────── */
+.footer-logo-img {
+  height: 48px !important;
+  width: auto;
+  display: block;
+  margin-bottom: .75rem;
+  filter: brightness(0) invert(1);
+  opacity: .9;
+}
+
+/* ── LOGO HORIZONTAL TRANSPARENTE ────────────────────── */
+.nav-logo { display: flex; align-items: center; }
+.nav-logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1); /* blanco sobre hero oscuro */
+  transition: filter var(--trans), opacity var(--trans);
+}
+.nav-logo-img:hover { opacity: .85; }
+.nav.scrolled .nav-logo-img {
+  filter: none; /* colores originales sobre nav blanco */
+}
+
+.footer-logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+  margin-bottom: .75rem;
+  filter: brightness(0) invert(1); /* blanco sobre footer oscuro */
+  opacity: .88;
+}
