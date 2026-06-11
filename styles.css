@@ -1006,3 +1006,53 @@ a.contacto-dato:hover { box-shadow: var(--shadow); }
 @media (max-width: 768px) {
   .tools-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ── NAV: divisor y enlaces a páginas externas ───────── */
+.nav-divider {
+  width: 1px;
+  height: 22px;
+  background: rgba(255,255,255,.35);
+  transition: background var(--trans);
+}
+.nav.scrolled .nav-divider { background: rgba(31,61,115,.25); }
+
+.nav-links .nav-ext {
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 50px;
+  padding: .42rem 1rem;
+  font-size: .85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  transition: all var(--trans);
+}
+.nav-links .nav-ext i {
+  font-size: .68rem;
+  opacity: .7;
+}
+.nav-links .nav-ext:hover {
+  background: rgba(255,255,255,.12);
+  border-color: var(--naranja-s);
+  color: var(--naranja-s);
+}
+.nav.scrolled .nav-links .nav-ext {
+  border-color: rgba(31,61,115,.3);
+}
+.nav.scrolled .nav-links .nav-ext:hover {
+  background: var(--azul-claro);
+  border-color: var(--azul2);
+  color: var(--azul);
+}
+
+@media (max-width: 768px) {
+  .nav-divider {
+    width: 150px;
+    height: 1px;
+    background: rgba(255,255,255,.3);
+  }
+  .nav-links.open .nav-ext {
+    font-size: 1.05rem;
+    padding: .6rem 1.4rem;
+  }
+}
