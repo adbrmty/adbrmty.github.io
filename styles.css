@@ -142,7 +142,7 @@ a { text-decoration: none; color: inherit; }
 .nav.scrolled .hamburger span { background: var(--azul); }
 
 .nav-inner {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.5rem;
   display: flex;
@@ -162,7 +162,7 @@ a { text-decoration: none; color: inherit; }
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 .nav-links a {
@@ -1020,11 +1020,12 @@ a.contacto-dato:hover { box-shadow: var(--shadow); }
 .nav-links .nav-ext {
   border: 1px solid rgba(255,255,255,.4);
   border-radius: 50px;
-  padding: .42rem 1rem;
-  font-size: .85rem;
+  padding: .42rem .9rem;
+  font-size: .82rem;
   display: inline-flex;
   align-items: center;
-  gap: .45rem;
+  gap: .4rem;
+  white-space: nowrap;
   transition: all var(--trans);
 }
 .nav-links .nav-ext i {
